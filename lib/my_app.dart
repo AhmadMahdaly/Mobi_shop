@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mobi_shop/screens/splash_screen/splash_screen.dart';
+import 'package:mobi_shop/utils/constants/colors_constants.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -22,22 +24,18 @@ class MyApp extends StatelessWidget {
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Mobi Shop',
-          home: const MyHomePage(),
+          theme: ThemeData(
+            appBarTheme: const AppBarTheme(
+              color: kScaffoldBackgroundColor,
+              iconTheme: IconThemeData(color: kMainColor),
+            ),
+            scaffoldBackgroundColor: kScaffoldBackgroundColor,
+            textTheme: Theme.of(
+              context,
+            ).textTheme.apply(fontFamily: 'Montserrat'),
+          ),
+          home: const SplashScreen(),
         ),
-      ),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-
-        child: const Icon(Icons.add),
       ),
     );
   }
