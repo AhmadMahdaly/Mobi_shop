@@ -20,7 +20,7 @@ class CustomHomeAppBar extends StatelessWidget implements PreferredSizeWidget {
         W(w: 12.w),
       ],
       leading: SvgPicture.asset(
-        'assets/svg/cart.svg',
+        'assets/svg/cart logo s.svg',
         width: 24.w,
         fit: BoxFit.none,
       ),
