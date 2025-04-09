@@ -11,9 +11,7 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(390, 844),
       minTextAdapt: true,
-      child:
-      /// Remove focus from any input element
-      GestureDetector(
+      child: GestureDetector(
         onTap: () {
           final currentFocus = FocusScope.of(context);
           if (!currentFocus.hasPrimaryFocus &&
