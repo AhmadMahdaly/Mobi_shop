@@ -3,9 +3,13 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mobi_shop/utils/constants/colors_constants.dart';
 
 class CustomHeadTitle extends StatelessWidget {
-  const CustomHeadTitle({required this.title, this.onPressed, super.key});
-  final void Function()? onPressed;
+  const CustomHeadTitle({
+    required this.title,
+    required this.navigator,
+    super.key,
+  });
   final String title;
+  final Widget navigator;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -22,7 +26,14 @@ class CustomHeadTitle extends StatelessWidget {
               height: 1.56.h,
             ),
           ),
-          IconButton(onPressed: () {}, icon: const Icon(Icons.arrow_forward)),
+          IconButton(
+            onPressed:
+                () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => navigator),
+                ),
+            icon: const Icon(Icons.arrow_forward),
+          ),
         ],
       ),
     );

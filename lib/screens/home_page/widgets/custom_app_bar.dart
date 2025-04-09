@@ -11,6 +11,7 @@ class CustomHomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      automaticallyImplyLeading: false,
       actions: [
         SvgPicture.asset(
           'assets/svg/cart outlight.svg',
