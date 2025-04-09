@@ -8,8 +8,9 @@ class NewArrivalsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 350.h,
+      height: 330.h,
       child: GridView.builder(
+        physics: const NeverScrollableScrollPhysics(),
         padding: EdgeInsets.symmetric(horizontal: 16.w),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
