@@ -10,8 +10,9 @@ class NewArrivalsWidget extends StatelessWidget {
     return SliverGrid(
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        childAspectRatio: 0.7.sp,
+        childAspectRatio: 0.65.sp,
         mainAxisSpacing: 9.h,
+        crossAxisSpacing: 9.w,
       ),
       delegate: SliverChildBuilderDelegate(
         (context, index) => const ItemWidget(),
