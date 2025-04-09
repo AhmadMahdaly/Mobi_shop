@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mobi_shop/widgets/item_widget/item_widget.dart';
 
-class NewArrivalsWidget extends StatelessWidget {
-  const NewArrivalsWidget({super.key});
+class BestSellingWidget extends StatelessWidget {
+  const BestSellingWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
