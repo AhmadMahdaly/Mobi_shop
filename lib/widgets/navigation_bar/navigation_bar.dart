@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:mobi_shop/screens/home_page/home_page.dart';
 import 'package:mobi_shop/utils/constants/colors_constants.dart';
+import 'package:mobi_shop/widgets/navigation_bar/widgets/select_icon_style.dart';
 import 'package:mobi_shop/widgets/navigation_bar/widgets/tab_item_name.dart';
 
 class AppNavigationBar extends StatefulWidget {
@@ -21,13 +21,13 @@ class _AppNavigationBarState extends State<AppNavigationBar> {
     const SizedBox(),
   ];
   List<String> selectedIcon = [
-    'assets/icons/home.png',
-    'assets/icons/heart.png',
-    'assets/icons/shopping-cart.png',
-    'assets/icons/profile.png',
+    'assets/svg/nav-home.svg',
+    'assets/svg/nav-heart.svg',
+    'assets/svg/nav-shopping-cart.svg',
+    'assets/svg/nav-profile.svg',
   ];
   List<String> unselectedIcon = [
-    'assets/icons/home_outline.png',
+    'assets/svg/home.svg',
     'assets/svg/heart.svg',
     'assets/svg/shopping-cart.svg',
     'assets/svg/profile.svg',
@@ -80,23 +80,15 @@ class _AppNavigationBarState extends State<AppNavigationBar> {
                         ),
                       ),
                       child: Row(
+                        spacing: 1.w,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Image.asset(
-                            selectedIcon[0],
-                            width: 26.w,
-                            height: 26.h,
-                          ),
+                          SelectIconStyle(selectedIcon[0]),
                           TabItemName(title: itemName[0]),
                         ],
                       ),
                     )
-                    : Image.asset(
-                      unselectedIcon[0],
-                      width: 24.w,
-                      height: 24.h,
-                      color: kTextColor,
-                    ),
+                    : UnSelectIconStyle(unselectedIcon[0]),
             label: '',
           ),
 
@@ -114,25 +106,15 @@ class _AppNavigationBarState extends State<AppNavigationBar> {
                         ),
                       ),
                       child: Row(
+                        spacing: 1.w,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Image.asset(
-                            selectedIcon[1],
-                            width: 26.w,
-                            height: 26.h,
-                          ),
+                          SelectIconStyle(selectedIcon[1]),
                           TabItemName(title: itemName[1]),
                         ],
                       ),
                     )
-                    : SvgPicture.asset(
-                      unselectedIcon[1],
-                      width: 24.sp,
-                      colorFilter: const ColorFilter.mode(
-                        kTextColor,
-                        BlendMode.srcIn,
-                      ),
-                    ),
+                    : UnSelectIconStyle(unselectedIcon[1]),
             label: '',
           ),
 
@@ -150,25 +132,16 @@ class _AppNavigationBarState extends State<AppNavigationBar> {
                         ),
                       ),
                       child: Row(
+                        spacing: 1.w,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Image.asset(
-                            selectedIcon[2],
-                            width: 26.w,
-                            height: 26.h,
-                          ),
+                          SelectIconStyle(selectedIcon[2]),
                           TabItemName(title: itemName[2]),
                         ],
                       ),
                     )
-                    : SvgPicture.asset(
-                      unselectedIcon[2],
-                      width: 24.sp,
-                      colorFilter: const ColorFilter.mode(
-                        kTextColor,
-                        BlendMode.srcIn,
-                      ),
-                    ),
+                    : UnSelectIconStyle(unselectedIcon[2]),
+
             label: '',
           ),
 
@@ -186,25 +159,15 @@ class _AppNavigationBarState extends State<AppNavigationBar> {
                         ),
                       ),
                       child: Row(
+                        spacing: 1.w,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Image.asset(
-                            selectedIcon[3],
-                            width: 26.w,
-                            height: 26.h,
-                          ),
+                          SelectIconStyle(selectedIcon[3]),
                           TabItemName(title: itemName[3]),
                         ],
                       ),
                     )
-                    : SvgPicture.asset(
-                      unselectedIcon[3],
-                      width: 24.sp,
-                      colorFilter: const ColorFilter.mode(
-                        kTextColor,
-                        BlendMode.srcIn,
-                      ),
-                    ),
+                    : UnSelectIconStyle(unselectedIcon[3]),
             label: '',
           ),
         ],
