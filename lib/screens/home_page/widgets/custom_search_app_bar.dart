@@ -9,7 +9,7 @@ class CustomSearchAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 16.w, vertical: 21.h),
+      margin: EdgeInsets.symmetric(vertical: 10.h),
       height: 45.h,
       width: double.infinity,
       padding: EdgeInsets.only(

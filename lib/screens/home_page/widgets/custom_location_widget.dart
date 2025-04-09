@@ -10,7 +10,7 @@ class CustomLocationWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 16.w),
+      padding: EdgeInsets.symmetric(vertical: 9.h),
       child: Row(
         children: [
           SvgPicture.asset(

@@ -7,7 +7,6 @@ class CustomHomeBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(16.r),
       clipBehavior: Clip.antiAlias,
       width: double.infinity,
       height: 140.h,
