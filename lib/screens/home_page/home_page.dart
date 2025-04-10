@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mobi_shop/screens/best%20_selling/best_selling_screen.dart';
 import 'package:mobi_shop/screens/home_page/widgets/best_selling_widget.dart';
@@ -16,10 +15,6 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setEnabledSystemUIMode(
-      SystemUiMode.manual,
-      overlays: SystemUiOverlay.values,
-    );
     return Scaffold(
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 16.w),
