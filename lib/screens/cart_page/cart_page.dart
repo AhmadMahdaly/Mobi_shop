@@ -15,6 +15,7 @@ class CartPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
+        toolbarHeight: 100.h,
         title: Row(
           children: [
             SvgPicture.asset(
