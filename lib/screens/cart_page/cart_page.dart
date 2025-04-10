@@ -17,7 +17,10 @@ class CartPage extends StatelessWidget {
         automaticallyImplyLeading: false,
         title: Row(
           children: [
-            SvgPicture.asset('assets/svg/cart outlight.svg'),
+            SvgPicture.asset(
+              'assets/svg/cart outlight.svg',
+              colorFilter: const ColorFilter.mode(kTextColor, BlendMode.srcIn),
+            ),
             W(w: 8.w),
             Text(
               'Cart',
