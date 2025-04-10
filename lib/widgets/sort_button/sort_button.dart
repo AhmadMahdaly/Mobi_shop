@@ -20,7 +20,7 @@ class SortButton extends StatelessWidget {
           ),
       child: Container(
         width: 125.w,
-        height: 48.h,
+        height: 56.h,
         decoration: BoxDecoration(
           color: kScaffoldBackgroundColor,
           border: Border.all(color: kBorderColor),
