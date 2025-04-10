@@ -4,7 +4,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:mobi_shop/screens/search_bar/search_bar_page.dart';
 import 'package:mobi_shop/utils/constants/colors_constants.dart';
 
-class CustomSearchAppBar extends StatelessWidget {
+class CustomSearchAppBar extends StatelessWidget
+    implements PreferredSizeWidget {
   const CustomSearchAppBar({super.key});
 
   @override
@@ -69,4 +70,7 @@ class CustomSearchAppBar extends StatelessWidget {
       borderRadius: BorderRadius.circular(48.r),
     );
   }
+
+  @override
+  Size get preferredSize => const Size.fromHeight(50.0);
 }
