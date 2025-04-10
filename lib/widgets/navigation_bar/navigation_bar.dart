@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mobi_shop/screens/cart_page/cart_page.dart';
 import 'package:mobi_shop/screens/home_page/home_page.dart';
 import 'package:mobi_shop/utils/constants/colors_constants.dart';
 import 'package:mobi_shop/widgets/navigation_bar/widgets/select_icon_style.dart';
@@ -17,7 +19,7 @@ class _AppNavigationBarState extends State<AppNavigationBar> {
   List<Widget> pages = [
     const HomePage(),
     const SizedBox(),
-    const SizedBox(),
+    const CartPage(),
     const SizedBox(),
   ];
   List<String> selectedIcon = [
@@ -41,6 +43,10 @@ class _AppNavigationBarState extends State<AppNavigationBar> {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setEnabledSystemUIMode(
+      SystemUiMode.manual,
+      overlays: SystemUiOverlay.values,
+    );
     return Scaffold(
       body: pages.elementAt(_currentIndex),
       bottomNavigationBar: BottomNavigationBar(
