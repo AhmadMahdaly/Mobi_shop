@@ -10,7 +10,7 @@ class NewArrivalsWidget extends StatelessWidget {
     return SliverGrid(
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        childAspectRatio: 0.65.sp,
+        mainAxisExtent: 300.h,
         mainAxisSpacing: 9.h,
         crossAxisSpacing: 9.w,
       ),
