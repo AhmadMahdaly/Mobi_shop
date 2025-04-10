@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mobi_shop/screens/cart_page/cart_page.dart';
+import 'package:mobi_shop/screens/explore_page/explore_page.dart';
 import 'package:mobi_shop/screens/home_page/home_page.dart';
 import 'package:mobi_shop/utils/constants/colors_constants.dart';
 import 'package:mobi_shop/widgets/navigation_bar/widgets/select_icon_style.dart';
@@ -18,23 +19,23 @@ class _AppNavigationBarState extends State<AppNavigationBar> {
   int _currentIndex = 0;
   List<Widget> pages = [
     const HomePage(),
-    const SizedBox(),
+    const ExplorePage(),
     const CartPage(),
     const SizedBox(),
   ];
   List<String> selectedIcon = [
     'assets/svg/nav-home.svg',
-    'assets/svg/nav-heart.svg',
+    'assets/svg/nav-explore.svg',
     'assets/svg/nav-shopping-cart.svg',
     'assets/svg/nav-profile.svg',
   ];
   List<String> unselectedIcon = [
     'assets/svg/home.svg',
-    'assets/svg/heart.svg',
+    'assets/svg/explore.svg',
     'assets/svg/shopping-cart.svg',
     'assets/svg/profile.svg',
   ];
-  List<String> itemName = ['Home', 'Wishlist', 'Cart', 'Profile'];
+  List<String> itemName = ['Home', 'Explore', 'Cart', 'Profile'];
   void _onItemTapped(int index) {
     setState(() {
       _currentIndex = index;
