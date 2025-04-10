@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mobi_shop/screens/cart_page/cart_page.dart';
 import 'package:mobi_shop/screens/explore_page/explore_page.dart';
 import 'package:mobi_shop/screens/home_page/home_page.dart';
+import 'package:mobi_shop/screens/profile_page/profile_page.dart';
 import 'package:mobi_shop/utils/constants/colors_constants.dart';
 import 'package:mobi_shop/widgets/navigation_bar/widgets/select_icon_style.dart';
 import 'package:mobi_shop/widgets/navigation_bar/widgets/tab_item_name.dart';
@@ -21,7 +22,7 @@ class _AppNavigationBarState extends State<AppNavigationBar> {
     const HomePage(),
     const ExplorePage(),
     const CartPage(),
-    const SizedBox(),
+    const ProfilePage(),
   ];
   List<String> selectedIcon = [
     'assets/svg/nav-home.svg',
