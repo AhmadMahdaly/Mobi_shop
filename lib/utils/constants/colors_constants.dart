@@ -8,3 +8,5 @@ const kOrangeColor = Color(0xffF15513);
 const kBigHeaderTitleColor = Color(0xFF4D4D4D);
 const kBorderColor = Color(0xFFEFEFEF);
 const kUnselectedIconColor = Color(0xFFE4E8F7);
+const kDarkColor = Color(0xFF222222);
+const kDarkTextColor = Color(0xFF555555);
