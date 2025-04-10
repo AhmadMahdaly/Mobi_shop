@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:mobi_shop/screens/cart_page/cart_page.dart';
 import 'package:mobi_shop/utils/components/space.dart';
 
 class CustomHomeAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -13,10 +14,17 @@ class CustomHomeAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       automaticallyImplyLeading: false,
       actions: [
-        SvgPicture.asset(
-          'assets/svg/cart outlight.svg',
-          width: 24.w,
-          fit: BoxFit.none,
+        InkWell(
+          onTap:
+              () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const CartPage()),
+              ),
+          child: SvgPicture.asset(
+            'assets/svg/cart outlight.svg',
+            width: 24.w,
+            fit: BoxFit.none,
+          ),
         ),
         W(w: 12.w),
       ],
