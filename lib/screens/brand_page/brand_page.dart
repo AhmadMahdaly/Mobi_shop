@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:mobi_shop/screens/brand_page/widgets/brand_products_page.dart';
+import 'package:mobi_shop/screens/brand_page/widgets/brand_products_widget.dart';
 import 'package:mobi_shop/screens/home_page/widgets/custom_search_app_bar.dart';
 import 'package:mobi_shop/utils/constants/colors_constants.dart';
 
