@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mobi_shop/screens/home_page/widgets/custom_app_bar.dart';
 import 'package:mobi_shop/screens/home_page/widgets/custom_search_app_bar.dart';
 import 'package:mobi_shop/screens/new_arrivals/widgets/new_arrivals_products_grid.dart';
-import 'package:mobi_shop/widgets/custom_app_bar_pages.dart';
 import 'package:mobi_shop/widgets/filter_button/filter_button.dart';
 import 'package:mobi_shop/widgets/page_title_widget.dart';
 import 'package:mobi_shop/widgets/qty_results_widget.dart';
@@ -21,7 +21,7 @@ class NewArrivalsScreen extends StatelessWidget {
             child: const CustomScrollView(
               slivers: [
                 SliverAppBar(
-                  flexibleSpace: CustomAppBarPages(),
+                  flexibleSpace: CustomHomeAppBar(),
                   automaticallyImplyLeading: false,
                 ),
                 SliverToBoxAdapter(child: CustomSearchAppBar()),

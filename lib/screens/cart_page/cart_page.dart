@@ -14,6 +14,7 @@ class CartPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: Row(
           children: [
             SvgPicture.asset('assets/svg/cart outlight.svg'),
